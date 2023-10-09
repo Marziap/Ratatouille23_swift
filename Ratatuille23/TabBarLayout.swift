@@ -43,8 +43,8 @@ struct TabBarLayout: View {
     }
 }
 
-#Preview {
+/*#Preview {
     TabBarLayout()
-}
+}*/
 
 

@@ -60,7 +60,7 @@ struct ContentView: View {
                     EmptyView()
                 }
                 
-                NavigationLink(destination: Text("DipeLoginView") ,isActive: $goToDipe){
+                NavigationLink(destination: DipeLoginView() ,isActive: $goToDipe){
                     EmptyView()
                 }
                 

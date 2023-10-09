@@ -10,8 +10,9 @@ import SwiftUI
 
 class Datas: ObservableObject{
 
-    @Published var admin: Employee = Employee()
+    @Published var dipendenti: [Employee] = []
     @Published var ristorante: [Ristorante] = []
     @Published var menuItems: [MenuItem] = []
+    @Published var openfoodfacts: [OFF] = []
 }
 var datas = Datas()

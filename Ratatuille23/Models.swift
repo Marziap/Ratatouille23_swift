@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Employee: Codable {
+struct Employee: Codable, Identifiable{
     var id: Int?
     var username: String?
     var password: String?
@@ -17,7 +17,14 @@ struct Employee: Codable {
     var id_ristorante: Int?
 }
 
-struct Ristorante: Codable {
+struct OFF: Codable, Identifiable{
+    var id: UUID
+    var nome: String?
+    var allergeni: String?
+    var descrizione: String?
+}
+
+struct Ristorante: Codable, Identifiable{
     var id: Int?
     var username: String?
     var password: String?
@@ -29,6 +36,6 @@ struct Ristorante: Codable {
 struct MenuItem: Codable, Identifiable{
     var id: Int?
     var nome, descrizione, categoria, allergeni: String?
-    var prezzo: Double?
+    var prezzo: Float?
     var id_ristorante: Int?
 }

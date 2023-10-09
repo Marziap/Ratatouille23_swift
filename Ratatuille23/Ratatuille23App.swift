@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct Ratatuille23App: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

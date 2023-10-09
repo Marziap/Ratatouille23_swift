@@ -16,6 +16,7 @@ struct AmmiAddDipeView: View {
             Text("Aggiungi dipendente")
                 .font(Font.custom("Roboto", size: 45))
                 .foregroundColor(.black)
+                .padding(.bottom, 50)
             
             TextField("Username", text: $username)
                 .multilineTextAlignment(.center)
@@ -34,7 +35,7 @@ struct AmmiAddDipeView: View {
                     .tag("cameriere")
                 Text("Supervisore")
                     .tag("supervisore")
-            }.pickerStyle(.segmented).padding(.horizontal).padding(.top, 30)
+            }.pickerStyle(.segmented).padding(.horizontal).padding(.vertical, 30)
             
     
             

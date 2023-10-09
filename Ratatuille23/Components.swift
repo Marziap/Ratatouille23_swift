@@ -33,6 +33,7 @@ struct bottone: View {
         
 }
 
+
 struct piatto: View {
     var testo: String
     var body: some View{
@@ -41,6 +42,47 @@ struct piatto: View {
             .padding()
             .font(Font.custom("Roboto", size: 25))
             .fontWeight(.medium)
+    }
+}
+
+struct piattoWaiter: View {
+    var testo: String
+    @State private var count = 0
+    var body: some View{
+        HStack{
+            Text("-")
+                .padding()
+                .font(Font.custom("Roboto", size: 25))
+                .fontWeight(.medium)
+                .onTapGesture {
+                    if(count==0){
+                        count=0;
+                    }else{
+                        count=count-1;
+                    }
+                    
+                }
+            
+            Text(testo)
+                .multilineTextAlignment(.center)
+                .padding()
+                .font(Font.custom("Roboto", size: 25))
+                .fontWeight(.medium)
+            
+            Text("+")
+                .padding()
+                .font(Font.custom("Roboto", size: 25))
+                .fontWeight(.medium)
+                .onTapGesture {
+                    count=count+1;
+                }
+            
+            Text(String(count))
+                .padding()
+                .font(Font.custom("Roboto", size: 25))
+                .fontWeight(.medium)
+        }
+        .padding(.leading, 20)
     }
 }
 

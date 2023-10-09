@@ -84,6 +84,6 @@ struct AmmiDetailsView: View {
     }
 }
 
-#Preview {
+/*#Preview {
     AmmiDetailsView()
-}
+}*/

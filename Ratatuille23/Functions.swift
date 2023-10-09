@@ -66,6 +66,46 @@ class serverAPI {
     }
     
     
+    static func updateEmployee(employee: Employee){
+        let url = "http://localhost:3000/employee/"+String(employee.id!)
+        let myUrl = URL(string: url)!
+        
+        var request = URLRequest(url: myUrl) // Use myUrl here
+        request.httpMethod = "PUT"
+
+        let data = try! JSONEncoder().encode(employee)
+        print(data)
+        request.httpBody = data
+        request.setValue(
+            "application/json",
+            forHTTPHeaderField: "Content-Type"
+        )
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print("Error: \(error)")
+                return
+            }
+            
+            guard let httpResponse = response as? HTTPURLResponse else {
+                print("Invalid response")
+                return
+            }
+
+            let statusCode = httpResponse.statusCode
+
+            if statusCode == 200 {
+                print("SUCCESS")
+            } else {
+                print("FAILURE \(statusCode)")
+            }
+        }
+        
+        task.resume()
+    }
+
+    
+    
     static func getUserPass(username: String, password: String) async throws -> [Employee] {
         let url = "http://localhost:3000/employee/\(username)/\(password)"
         let myUrl = URL(string: url)!
@@ -87,8 +127,31 @@ class serverAPI {
         return fetchedData
     }
     
+    
+    static func getOff() async throws -> [OFF] {
+        let url = "http://localhost:3000/openfoodfacts/"
+        let myUrl = URL(string: url)!
+        var request = URLRequest(url: myUrl)
+        request.httpMethod = "GET"
+
+        let (data, _) = try await URLSession.shared.data(for: request)
+        print(data)
+
+        let decoder = JSONDecoder()
+        var fetchedData: [OFF]
+        do {
+            fetchedData = try decoder.decode([OFF].self, from: data)
+        }
+        catch{
+            return []
+        }
+
+        return fetchedData
+    }
+    
+    
     static func getMEnuItems(restaurant_id: Int) async throws -> [MenuItem] {
-        let url = "http://localhost:3000/menu-tems//restaurant/"+String(restaurant_id)
+        let url = "http://localhost:3000/menu-item/"+String(restaurant_id)
         let myUrl = URL(string: url)!
         var request = URLRequest(url: myUrl)
         request.httpMethod = "GET"
@@ -98,15 +161,40 @@ class serverAPI {
         let decoder = JSONDecoder()
         var fetchedData: [MenuItem]
         do {
-            print("Ciao1 id: " + String(restaurant_id))
+            let str = String(decoding: data, as: UTF8.self)
+            print("Ciao1 str: " + str)
             fetchedData = try decoder.decode([MenuItem].self, from: data)
             print("Ciao2")
         }
         catch{
-            print("Ciao3")
+            print(error)
             return []
         }
         print("fetched items " + fetchedData[0].nome!)
+        return fetchedData
+    }
+    
+    
+    static func getEmployees(restaurant_id: Int) async throws -> [Employee] {
+        let url = "http://localhost:3000/employee/restaurant/" + String(restaurant_id)
+        let myUrl = URL(string: url)!
+        var request = URLRequest(url: myUrl)
+        request.httpMethod = "GET"
+
+        let (data, _) = try await URLSession.shared.data(for: request)
+
+        let decoder = JSONDecoder()
+        var fetchedData: [Employee]
+        do {
+            let str = String(decoding: data, as: UTF8.self)
+            print("Ciao1 str: " + str)
+            fetchedData = try decoder.decode([Employee].self, from: data)
+            print("Ciao2")
+        }
+        catch{
+            print(error)
+            return []
+        }
         return fetchedData
     }
     
@@ -118,17 +206,20 @@ class serverAPI {
         request.httpMethod = "GET"
 
         let (data, _) = try await URLSession.shared.data(for: request)
-        print(data)
 
         let decoder = JSONDecoder()
         var fetchedData: [Ristorante]
         do {
+            let str = String(decoding: data, as: UTF8.self)
+            print("Ciao1 str: " + str)
             fetchedData = try decoder.decode([Ristorante].self, from: data)
+            print("Ciao 2")
         }
         catch{
+            print(error)
             return []
         }
-
+        print("fetched items " + fetchedData[0].nome)
         return fetchedData
     }
 
