@@ -18,6 +18,12 @@
 		7F3F56772ABEF8DD001D0832 /* AmmiLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F56762ABEF8DD001D0832 /* AmmiLoginView.swift */; };
 		7F3F56792ABEF9B0001D0832 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F56782ABEF9B0001D0832 /* Components.swift */; };
 		7F3F567B2ABF02DA001D0832 /* TabBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F567A2ABF02DA001D0832 /* TabBarLayout.swift */; };
+		7F42B1A62AD476B100D46835 /* AddMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B1A52AD476B100D46835 /* AddMenuItemView.swift */; };
+		7F42B1AC2AD4776200D46835 /* DipeFirstAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B1A72AD4776200D46835 /* DipeFirstAccessView.swift */; };
+		7F42B1AD2AD4776200D46835 /* DipeLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B1A82AD4776200D46835 /* DipeLoginView.swift */; };
+		7F42B1AE2AD4776200D46835 /* WaiterMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B1A92AD4776200D46835 /* WaiterMenuView.swift */; };
+		7F42B1AF2AD4776200D46835 /* DipeTabBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B1AA2AD4776200D46835 /* DipeTabBarLayout.swift */; };
+		7F42B1B02AD4776200D46835 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 7F42B1AB2AD4776200D46835 /* Preview Content */; };
 		7F86ACC22AC0735C00E45F70 /* AmmistatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F86ACC12AC0735C00E45F70 /* AmmistatisticsView.swift */; };
 		7F86ACC52AC0849600E45F70 /* RatatouilleCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F86ACC32AC0849600E45F70 /* RatatouilleCoreData.xcdatamodeld */; };
 		7FF87E902ABF1B8600904609 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF87E8F2ABF1B8600904609 /* Functions.swift */; };
@@ -61,6 +67,12 @@
 		7F3F56762ABEF8DD001D0832 /* AmmiLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmiLoginView.swift; sourceTree = "<group>"; };
 		7F3F56782ABEF9B0001D0832 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		7F3F567A2ABF02DA001D0832 /* TabBarLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarLayout.swift; sourceTree = "<group>"; };
+		7F42B1A52AD476B100D46835 /* AddMenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMenuItemView.swift; sourceTree = "<group>"; };
+		7F42B1A72AD4776200D46835 /* DipeFirstAccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DipeFirstAccessView.swift; sourceTree = "<group>"; };
+		7F42B1A82AD4776200D46835 /* DipeLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DipeLoginView.swift; sourceTree = "<group>"; };
+		7F42B1A92AD4776200D46835 /* WaiterMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaiterMenuView.swift; sourceTree = "<group>"; };
+		7F42B1AA2AD4776200D46835 /* DipeTabBarLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DipeTabBarLayout.swift; sourceTree = "<group>"; };
+		7F42B1AB2AD4776200D46835 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 		7F86ACC12AC0735C00E45F70 /* AmmistatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmistatisticsView.swift; sourceTree = "<group>"; };
 		7F86ACC42AC0849600E45F70 /* RatatouilleCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RatatouilleCoreData.xcdatamodel; sourceTree = "<group>"; };
 		7FF87E8F2ABF1B8600904609 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
@@ -120,6 +132,12 @@
 		7F3F56482ABEF296001D0832 /* Ratatuille23 */ = {
 			isa = PBXGroup;
 			children = (
+				7F42B1A72AD4776200D46835 /* DipeFirstAccessView.swift */,
+				7F42B1A82AD4776200D46835 /* DipeLoginView.swift */,
+				7F42B1AA2AD4776200D46835 /* DipeTabBarLayout.swift */,
+				7F42B1AB2AD4776200D46835 /* Preview Content */,
+				7F42B1A92AD4776200D46835 /* WaiterMenuView.swift */,
+				7F42B1A52AD476B100D46835 /* AddMenuItemView.swift */,
 				7F3F56492ABEF296001D0832 /* Ratatuille23App.swift */,
 				7F3F564B2ABEF296001D0832 /* ContentView.swift */,
 				7F3F56762ABEF8DD001D0832 /* AmmiLoginView.swift */,
@@ -269,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F42B1B02AD4776200D46835 /* Preview Content in Resources */,
 				7F3F56522ABEF297001D0832 /* Preview Assets.xcassets in Resources */,
 				7F3F564E2ABEF297001D0832 /* Assets.xcassets in Resources */,
 			);
@@ -296,7 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FF87E922ABF1F8F00904609 /* Data.swift in Sources */,
+				7F42B1AD2AD4776200D46835 /* DipeLoginView.swift in Sources */,
+				7F42B1AF2AD4776200D46835 /* DipeTabBarLayout.swift in Sources */,
 				7F86ACC52AC0849600E45F70 /* RatatouilleCoreData.xcdatamodeld in Sources */,
+				7F42B1A62AD476B100D46835 /* AddMenuItemView.swift in Sources */,
 				7F3F567B2ABF02DA001D0832 /* TabBarLayout.swift in Sources */,
 				7FF87E982ABF3BFE00904609 /* AmmiAddDipeView.swift in Sources */,
 				7F3F564C2ABEF296001D0832 /* ContentView.swift in Sources */,
@@ -305,10 +327,12 @@
 				7F3F56792ABEF9B0001D0832 /* Components.swift in Sources */,
 				7F3F56772ABEF8DD001D0832 /* AmmiLoginView.swift in Sources */,
 				7FF87E9A2ABF425E00904609 /* AmmiMenuView.swift in Sources */,
+				7F42B1AC2AD4776200D46835 /* DipeFirstAccessView.swift in Sources */,
 				7F077EDA2AC2F065007BA4B3 /* QRCodeView.swift in Sources */,
 				7F86ACC22AC0735C00E45F70 /* AmmistatisticsView.swift in Sources */,
 				7F3F564A2ABEF296001D0832 /* Ratatuille23App.swift in Sources */,
 				7FF87E902ABF1B8600904609 /* Functions.swift in Sources */,
+				7F42B1AE2AD4776200D46835 /* WaiterMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
