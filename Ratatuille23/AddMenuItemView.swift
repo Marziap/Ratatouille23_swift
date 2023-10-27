@@ -9,12 +9,13 @@ import SwiftUI
 
 struct AddMenuItemView: View {
     
-@State private var nome = ""
+    @State private var nome = datas.selected.nome ?? ""
     @State private var prezzo = ""
-    @State private var descrizione = ""
-    @State private var allergeni = ""
+    @State private var descrizione = datas.selected.descrizione ?? ""
+    @State private var allergeni = datas.selected.allergeni ?? ""
     @State private var categoria = ""
     @State private var posizione = ""
+    @State private var showOFF = false
     var body: some View {
         VStack {
             Text("Aggiungi piatto")
@@ -47,6 +48,7 @@ struct AddMenuItemView: View {
             .font(Font.custom("Roboto", size: 25))
             
             Button {
+                //add item to db
             } label: {
                 Text("Aggiungi")
                     .padding()
@@ -57,24 +59,22 @@ struct AddMenuItemView: View {
             .cornerRadius(100)
             .foregroundColor(.accent)
             .padding()
-        }.task {
-            do {
-                datas.openfoodfacts = try await serverAPI.getOff()
-                if let firstItem = datas.openfoodfacts.first {
-                    print("Qui " + (firstItem.nome ?? " ") )
-                }
-            } catch {
-                // Handle errors here
-                print("Error fetching data: \(error)")
+            
+            Button {
+                showOFF=true;
+            } label: {
+                Text("Carica da OpenFoodFacts")
+                    .padding()
+                    .font(Font.custom("Roboto", size: 25))
+                    .fontWeight(.medium)
             }
-        }
-        .onChange(of: nome) { newValue in
-            if let item = datas.openfoodfacts.first(where: { $0.nome == newValue }) {
-                descrizione = item.descrizione ?? ""
-                nome = item.nome ?? ""
-                allergeni = item.allergeni ?? ""
-            }
-        }
+            .background(.accent)
+            .cornerRadius(100)
+            .foregroundColor(.white)
+            .padding()
+        }.sheet(isPresented: $showOFF, content: {
+            OpenFoodFactsView()
+        })
     }
 }
 

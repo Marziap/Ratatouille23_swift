@@ -8,12 +8,32 @@
 import SwiftUI
 import PhotosUI
 
+
+extension String {
+    var isNumber: Bool {
+        let digitsCharacters = CharacterSet(charactersIn: "0123456789")
+        return CharacterSet(charactersIn: self).isSubset(of: digitsCharacters)
+    }
+}
+
 struct AmmiDetailsView: View {
     @State private var nome = datas.ristorante[0].nome
     @State private var telefono = datas.ristorante[0].telefono
     @State private var indirizzo = datas.ristorante[0].indirizzo
     @State private var selectedItem: PhotosPickerItem? = nil
     @State private var selectedImageData: Data? = nil
+    @State private var saved = false
+    
+    
+    func checkInputs(telefono: String, empty: Bool){
+        if(!empty && saved && telefono.isNumber){
+            print("telephone field is correct")
+        }else{
+            print("telephone field is empty or is not numeric")
+            //show alert
+        }
+    }
+    
     var body: some View {
         VStack {
             Text("Dettagli attività")
@@ -67,6 +87,9 @@ struct AmmiDetailsView: View {
                         serverAPI.addRestaurantDB(ristorante: ristorante)
                     }
                 }
+                
+                saved=true
+                
             } label: {
                 Text("Salva")
                     .padding()

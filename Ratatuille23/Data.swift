@@ -14,5 +14,6 @@ class Datas: ObservableObject{
     @Published var ristorante: [Ristorante] = []
     @Published var menuItems: [MenuItem] = []
     @Published var openfoodfacts: [OFF] = []
+    @Published var selected: OFF = OFF()
 }
 var datas = Datas()

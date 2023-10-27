@@ -140,12 +140,17 @@ class serverAPI {
         let decoder = JSONDecoder()
         var fetchedData: [OFF]
         do {
+            let str = String(decoding: data, as: UTF8.self)
+            
             fetchedData = try decoder.decode([OFF].self, from: data)
+            
+            
         }
         catch{
+            print(error)
             return []
         }
-
+        print("fetched items " + (fetchedData[0].nome ?? "err"))
         return fetchedData
     }
     
@@ -162,15 +167,15 @@ class serverAPI {
         var fetchedData: [MenuItem]
         do {
             let str = String(decoding: data, as: UTF8.self)
-            print("Ciao1 str: " + str)
+            //print("Ciao1 str: " + str)
             fetchedData = try decoder.decode([MenuItem].self, from: data)
-            print("Ciao2")
+            //print("Ciao2")
         }
         catch{
             print(error)
             return []
         }
-        print("fetched items " + fetchedData[0].nome!)
+        //print("fetched items " + fetchedData[0].nome!)
         return fetchedData
     }
     
@@ -187,9 +192,9 @@ class serverAPI {
         var fetchedData: [Employee]
         do {
             let str = String(decoding: data, as: UTF8.self)
-            print("Ciao1 str: " + str)
+            //print("Ciao1 str: " + str)
             fetchedData = try decoder.decode([Employee].self, from: data)
-            print("Ciao2")
+            //print("Ciao2")
         }
         catch{
             print(error)
@@ -211,15 +216,15 @@ class serverAPI {
         var fetchedData: [Ristorante]
         do {
             let str = String(decoding: data, as: UTF8.self)
-            print("Ciao1 str: " + str)
+            //print("Ciao1 str: " + str)
             fetchedData = try decoder.decode([Ristorante].self, from: data)
-            print("Ciao 2")
+            //print("Ciao 2")
         }
         catch{
             print(error)
             return []
         }
-        print("fetched items " + fetchedData[0].nome)
+        //print("fetched items " + fetchedData[0].nome)
         return fetchedData
     }
 

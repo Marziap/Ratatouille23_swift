@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7F077EDA2AC2F065007BA4B3 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F077ED92AC2F065007BA4B3 /* QRCodeView.swift */; };
+		7F2EE7D92AD5C9B4003A5564 /* OpenFoodFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2EE7D82AD5C9B4003A5564 /* OpenFoodFactsView.swift */; };
 		7F3F564A2ABEF296001D0832 /* Ratatuille23App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F56492ABEF296001D0832 /* Ratatuille23App.swift */; };
 		7F3F564C2ABEF296001D0832 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F564B2ABEF296001D0832 /* ContentView.swift */; };
 		7F3F564E2ABEF297001D0832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F564D2ABEF297001D0832 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		7F077ED92AC2F065007BA4B3 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		7F2EE7D82AD5C9B4003A5564 /* OpenFoodFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFoodFactsView.swift; sourceTree = "<group>"; };
 		7F3F56462ABEF296001D0832 /* Ratatuille23.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratatuille23.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3F56492ABEF296001D0832 /* Ratatuille23App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratatuille23App.swift; sourceTree = "<group>"; };
 		7F3F564B2ABEF296001D0832 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				7F3F567A2ABF02DA001D0832 /* TabBarLayout.swift */,
 				7F86ACC12AC0735C00E45F70 /* AmmistatisticsView.swift */,
 				7FF87E952ABF2CEE00904609 /* AmmiDetailsView.swift */,
+				7F2EE7D82AD5C9B4003A5564 /* OpenFoodFactsView.swift */,
 				7FF87E8F2ABF1B8600904609 /* Functions.swift */,
 				7FF87E912ABF1F8F00904609 /* Data.swift */,
 				7FF87E972ABF3BFE00904609 /* AmmiAddDipeView.swift */,
@@ -330,6 +333,7 @@
 				7F42B1AC2AD4776200D46835 /* DipeFirstAccessView.swift in Sources */,
 				7F077EDA2AC2F065007BA4B3 /* QRCodeView.swift in Sources */,
 				7F86ACC22AC0735C00E45F70 /* AmmistatisticsView.swift in Sources */,
+				7F2EE7D92AD5C9B4003A5564 /* OpenFoodFactsView.swift in Sources */,
 				7F3F564A2ABEF296001D0832 /* Ratatuille23App.swift in Sources */,
 				7FF87E902ABF1B8600904609 /* Functions.swift in Sources */,
 				7F42B1AE2AD4776200D46835 /* WaiterMenuView.swift in Sources */,

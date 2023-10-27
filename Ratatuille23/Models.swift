@@ -17,8 +17,8 @@ struct Employee: Codable, Identifiable{
     var id_ristorante: Int?
 }
 
-struct OFF: Codable, Identifiable{
-    var id: UUID
+struct OFF: Codable, Identifiable, Hashable{
+    var id: UUID?
     var nome: String?
     var allergeni: String?
     var descrizione: String?
