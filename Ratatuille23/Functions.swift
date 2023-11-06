@@ -8,7 +8,47 @@
 import Foundation
 import SwiftUI
 
-class serverAPI {
+extension String {
+    var isNumeric: Bool {
+        let digitsCharacters = CharacterSet(charactersIn: "0123456789")
+        return CharacterSet(charactersIn: self).isSubset(of: digitsCharacters)
+    }
+}
+
+class serverAPI: ObservableObject{
+    
+    
+    enum TelefonoError: Error {
+        case emptyField
+    }
+
+    func checkTelefono(telefono: String, empty: Bool) throws -> Bool {
+        if (empty) {
+            throw TelefonoError.emptyField
+        } else {
+            if (telefono.isNumeric && telefono.count == 10) {
+                print("Telephone field is correct")
+                return true
+            } else {
+                print("Telephone field is not numeric or does not have a length of 10")
+                // You can display an alert or handle the error as needed.
+                return false
+            }
+        }
+    }
+
+
+    
+    
+    func checkNomeIndirizo(nome: String, indirizzo: String) -> Bool{
+        if(!nome.isEmpty && !indirizzo.isEmpty){
+            print("name and address field are correct")
+            return true;
+        }else{
+            print("name and address field are not correct")
+            return false;
+        }
+    }
 
     static func addDB(employee: Employee){
         let url = URL(string: "http://localhost:3000/employee/")!
@@ -304,3 +344,5 @@ class serverAPI {
     */
     
 }
+
+var functions = serverAPI()

@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import Ratatuille23
 
 final class Ratatuille23Tests: XCTestCase {
 
@@ -17,19 +18,79 @@ final class Ratatuille23Tests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testTelefonoValidoEmptyFalse() throws {
+        // Arrange
+        let telefono = "1234567890"
+        let empty = false
+        
+        // Act
+        let risultato = try functions.checkTelefono(telefono: telefono, empty: empty)
+        
+        // Assert
+        XCTAssertEqual(risultato, true)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+    
+    func testTelefonoValidoEmptyTrue() throws {
+        // Arrange
+        let telefono = "1234567890"
+        let empty = true
+    
+        
+        // Assert
+        XCTAssertThrowsError(try functions.checkTelefono(telefono: telefono, empty: empty)) { error in
+            XCTAssertEqual(error as! serverAPI.TelefonoError, serverAPI.TelefonoError.emptyField)
         }
     }
-
+    
+    
+    func testTelefonoNumericoLunghezzaNon10EmptyFalse() throws {
+        // Arrange
+        let telefono = "1234567"
+        let empty = false
+        
+        // Act
+        let risultato = try functions.checkTelefono(telefono: telefono, empty: empty)
+        
+        // Assert
+        XCTAssertEqual(risultato, false)
+    }
+    
+    func testTelefonoNumericoLunghezzaNon10EmptyTrue() throws {
+        // Arrange
+        let telefono = "123456"
+        let empty = true
+        
+        
+        // Assert
+        XCTAssertThrowsError(try functions.checkTelefono(telefono: telefono, empty: empty)) { error in
+            XCTAssertEqual(error as! serverAPI.TelefonoError, serverAPI.TelefonoError.emptyField)
+        }
+    }
+    
+    func testTelefonoAlfanumericoEmptyFalse() throws {
+        // Arrange
+        let telefono = ""
+        let empty = false
+        
+        // Act
+        let risultato = try functions.checkTelefono(telefono: telefono, empty: empty)
+        
+        // Assert
+        XCTAssertEqual(risultato, false)
+    }
+    
+    func testTelefonoAlfanumericoEmptyTrue() throws {
+        // Arrange
+        let telefono = "jvdedw,12456"
+        let empty = true
+        
+        // Act
+//        let risultato = try functions.checkTelefono(telefono: telefono, empty: empty)
+        
+        // Assert
+        XCTAssertThrowsError(try functions.checkTelefono(telefono: telefono, empty: empty)) { error in
+            XCTAssertEqual(error as! serverAPI.TelefonoError, serverAPI.TelefonoError.emptyField)
+        }
+    }
+    
 }

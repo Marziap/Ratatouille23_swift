@@ -25,6 +25,7 @@
 		7F42B1AE2AD4776200D46835 /* WaiterMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B1A92AD4776200D46835 /* WaiterMenuView.swift */; };
 		7F42B1AF2AD4776200D46835 /* DipeTabBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B1AA2AD4776200D46835 /* DipeTabBarLayout.swift */; };
 		7F42B1B02AD4776200D46835 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 7F42B1AB2AD4776200D46835 /* Preview Content */; };
+		7F5287932AF8F5BC0044A02A /* CheckNomeIndirizzo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5287922AF8F5BC0044A02A /* CheckNomeIndirizzo.swift */; };
 		7F86ACC22AC0735C00E45F70 /* AmmistatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F86ACC12AC0735C00E45F70 /* AmmistatisticsView.swift */; };
 		7F86ACC52AC0849600E45F70 /* RatatouilleCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F86ACC32AC0849600E45F70 /* RatatouilleCoreData.xcdatamodeld */; };
 		7FF87E902ABF1B8600904609 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF87E8F2ABF1B8600904609 /* Functions.swift */; };
@@ -44,6 +45,13 @@
 			remoteInfo = Ratatuille23;
 		};
 		7F3F56622ABEF297001D0832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F3F563E2ABEF296001D0832 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F3F56452ABEF296001D0832;
+			remoteInfo = Ratatuille23;
+		};
+		7F5287892AF8EE580044A02A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7F3F563E2ABEF296001D0832 /* Project object */;
 			proxyType = 1;
@@ -75,6 +83,8 @@
 		7F42B1A92AD4776200D46835 /* WaiterMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaiterMenuView.swift; sourceTree = "<group>"; };
 		7F42B1AA2AD4776200D46835 /* DipeTabBarLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DipeTabBarLayout.swift; sourceTree = "<group>"; };
 		7F42B1AB2AD4776200D46835 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
+		7F5287852AF8EE580044A02A /* CheckTelefonoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckTelefonoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5287922AF8F5BC0044A02A /* CheckNomeIndirizzo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckNomeIndirizzo.swift; sourceTree = "<group>"; };
 		7F86ACC12AC0735C00E45F70 /* AmmistatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmistatisticsView.swift; sourceTree = "<group>"; };
 		7F86ACC42AC0849600E45F70 /* RatatouilleCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RatatouilleCoreData.xcdatamodel; sourceTree = "<group>"; };
 		7FF87E8F2ABF1B8600904609 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
@@ -107,6 +117,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7F5287822AF8EE580044A02A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -127,6 +144,7 @@
 				7F3F56462ABEF296001D0832 /* Ratatuille23.app */,
 				7F3F56572ABEF297001D0832 /* Ratatuille23Tests.xctest */,
 				7F3F56612ABEF297001D0832 /* Ratatuille23UITests.xctest */,
+				7F5287852AF8EE580044A02A /* CheckTelefonoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,14 +152,14 @@
 		7F3F56482ABEF296001D0832 /* Ratatuille23 */ = {
 			isa = PBXGroup;
 			children = (
-				7F42B1A72AD4776200D46835 /* DipeFirstAccessView.swift */,
-				7F42B1A82AD4776200D46835 /* DipeLoginView.swift */,
-				7F42B1AA2AD4776200D46835 /* DipeTabBarLayout.swift */,
 				7F42B1AB2AD4776200D46835 /* Preview Content */,
 				7F42B1A92AD4776200D46835 /* WaiterMenuView.swift */,
 				7F42B1A52AD476B100D46835 /* AddMenuItemView.swift */,
 				7F3F56492ABEF296001D0832 /* Ratatuille23App.swift */,
 				7F3F564B2ABEF296001D0832 /* ContentView.swift */,
+				7F42B1A82AD4776200D46835 /* DipeLoginView.swift */,
+				7F42B1A72AD4776200D46835 /* DipeFirstAccessView.swift */,
+				7F42B1AA2AD4776200D46835 /* DipeTabBarLayout.swift */,
 				7F3F56762ABEF8DD001D0832 /* AmmiLoginView.swift */,
 				7F3F56782ABEF9B0001D0832 /* Components.swift */,
 				7F077ED92AC2F065007BA4B3 /* QRCodeView.swift */,
@@ -173,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				7F3F565B2ABEF297001D0832 /* Ratatuille23Tests.swift */,
+				7F5287922AF8F5BC0044A02A /* CheckNomeIndirizzo.swift */,
 			);
 			path = Ratatuille23Tests;
 			sourceTree = "<group>";
@@ -242,6 +261,24 @@
 			productReference = 7F3F56612ABEF297001D0832 /* Ratatuille23UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7F5287842AF8EE580044A02A /* CheckTelefonoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F52878D2AF8EE580044A02A /* Build configuration list for PBXNativeTarget "CheckTelefonoTests" */;
+			buildPhases = (
+				7F5287812AF8EE580044A02A /* Sources */,
+				7F5287822AF8EE580044A02A /* Frameworks */,
+				7F5287832AF8EE580044A02A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F52878A2AF8EE580044A02A /* PBXTargetDependency */,
+			);
+			name = CheckTelefonoTests;
+			productName = CheckTelefonoTests;
+			productReference = 7F5287852AF8EE580044A02A /* CheckTelefonoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -263,6 +300,11 @@
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = 7F3F56452ABEF296001D0832;
 					};
+					7F5287842AF8EE580044A02A = {
+						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
+						TestTargetID = 7F3F56452ABEF296001D0832;
+					};
 				};
 			};
 			buildConfigurationList = 7F3F56412ABEF296001D0832 /* Build configuration list for PBXProject "Ratatuille23" */;
@@ -281,6 +323,7 @@
 				7F3F56452ABEF296001D0832 /* Ratatuille23 */,
 				7F3F56562ABEF297001D0832 /* Ratatuille23Tests */,
 				7F3F56602ABEF297001D0832 /* Ratatuille23UITests */,
+				7F5287842AF8EE580044A02A /* CheckTelefonoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -304,6 +347,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7F3F565F2ABEF297001D0832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5287832AF8EE580044A02A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5287932AF8F5BC0044A02A /* CheckNomeIndirizzo.swift in Sources */,
 				7F3F565C2ABEF297001D0832 /* Ratatuille23Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +405,13 @@
 			files = (
 				7F3F56682ABEF297001D0832 /* Ratatuille23UITestsLaunchTests.swift in Sources */,
 				7F3F56662ABEF297001D0832 /* Ratatuille23UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5287812AF8EE580044A02A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +427,11 @@
 			isa = PBXTargetDependency;
 			target = 7F3F56452ABEF296001D0832 /* Ratatuille23 */;
 			targetProxy = 7F3F56622ABEF297001D0832 /* PBXContainerItemProxy */;
+		};
+		7F52878A2AF8EE580044A02A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F3F56452ABEF296001D0832 /* Ratatuille23 */;
+			targetProxy = 7F5287892AF8EE580044A02A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -645,6 +708,50 @@
 			};
 			name = Release;
 		};
+		7F52878B2AF8EE580044A02A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Z4W25U7W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = marziapirozzi.CheckTelefonoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ratatuille23.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ratatuille23";
+			};
+			name = Debug;
+		};
+		7F52878C2AF8EE580044A02A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Z4W25U7W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = marziapirozzi.CheckTelefonoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ratatuille23.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ratatuille23";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -680,6 +787,15 @@
 			buildConfigurations = (
 				7F3F56722ABEF297001D0832 /* Debug */,
 				7F3F56732ABEF297001D0832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F52878D2AF8EE580044A02A /* Build configuration list for PBXNativeTarget "CheckTelefonoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F52878B2AF8EE580044A02A /* Debug */,
+				7F52878C2AF8EE580044A02A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
