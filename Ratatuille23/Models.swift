@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Employee: Codable, Identifiable{
+struct Employee: Codable, Identifiable, Equatable{
     var id: Int?
     var username: String?
     var password: String?

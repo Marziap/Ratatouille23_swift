@@ -38,7 +38,7 @@ final class Ratatuille23Tests: XCTestCase {
         
         // Assert
         XCTAssertThrowsError(try functions.checkTelefono(telefono: telefono, empty: empty)) { error in
-            XCTAssertEqual(error as! serverAPI.TelefonoError, serverAPI.TelefonoError.emptyField)
+            XCTAssertEqual(error as! serverAPI.MyError, serverAPI.MyError.emptyField)
         }
     }
     
@@ -63,7 +63,7 @@ final class Ratatuille23Tests: XCTestCase {
         
         // Assert
         XCTAssertThrowsError(try functions.checkTelefono(telefono: telefono, empty: empty)) { error in
-            XCTAssertEqual(error as! serverAPI.TelefonoError, serverAPI.TelefonoError.emptyField)
+            XCTAssertEqual(error as! serverAPI.MyError, serverAPI.MyError.emptyField)
         }
     }
     
@@ -89,7 +89,7 @@ final class Ratatuille23Tests: XCTestCase {
         
         // Assert
         XCTAssertThrowsError(try functions.checkTelefono(telefono: telefono, empty: empty)) { error in
-            XCTAssertEqual(error as! serverAPI.TelefonoError, serverAPI.TelefonoError.emptyField)
+            XCTAssertEqual(error as! serverAPI.MyError, serverAPI.MyError.emptyField)
         }
     }
     

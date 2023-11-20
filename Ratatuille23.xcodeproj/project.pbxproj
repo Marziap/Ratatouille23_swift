@@ -25,6 +25,8 @@
 		7F42B1AE2AD4776200D46835 /* WaiterMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B1A92AD4776200D46835 /* WaiterMenuView.swift */; };
 		7F42B1AF2AD4776200D46835 /* DipeTabBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B1AA2AD4776200D46835 /* DipeTabBarLayout.swift */; };
 		7F42B1B02AD4776200D46835 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 7F42B1AB2AD4776200D46835 /* Preview Content */; };
+		7F46CE982B0B7192004CB1D7 /* CheckUsernamePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46CE972B0B7192004CB1D7 /* CheckUsernamePassword.swift */; };
+		7F46CE9A2B0B7DC5004CB1D7 /* CheckTavolo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46CE992B0B7DC5004CB1D7 /* CheckTavolo.swift */; };
 		7F5287932AF8F5BC0044A02A /* CheckNomeIndirizzo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5287922AF8F5BC0044A02A /* CheckNomeIndirizzo.swift */; };
 		7F86ACC22AC0735C00E45F70 /* AmmistatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F86ACC12AC0735C00E45F70 /* AmmistatisticsView.swift */; };
 		7F86ACC52AC0849600E45F70 /* RatatouilleCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F86ACC32AC0849600E45F70 /* RatatouilleCoreData.xcdatamodeld */; };
@@ -83,6 +85,8 @@
 		7F42B1A92AD4776200D46835 /* WaiterMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaiterMenuView.swift; sourceTree = "<group>"; };
 		7F42B1AA2AD4776200D46835 /* DipeTabBarLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DipeTabBarLayout.swift; sourceTree = "<group>"; };
 		7F42B1AB2AD4776200D46835 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
+		7F46CE972B0B7192004CB1D7 /* CheckUsernamePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUsernamePassword.swift; sourceTree = "<group>"; };
+		7F46CE992B0B7DC5004CB1D7 /* CheckTavolo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTavolo.swift; sourceTree = "<group>"; };
 		7F5287852AF8EE580044A02A /* CheckTelefonoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckTelefonoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5287922AF8F5BC0044A02A /* CheckNomeIndirizzo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckNomeIndirizzo.swift; sourceTree = "<group>"; };
 		7F86ACC12AC0735C00E45F70 /* AmmistatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmistatisticsView.swift; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 			children = (
 				7F3F565B2ABEF297001D0832 /* Ratatuille23Tests.swift */,
 				7F5287922AF8F5BC0044A02A /* CheckNomeIndirizzo.swift */,
+				7F46CE972B0B7192004CB1D7 /* CheckUsernamePassword.swift */,
+				7F46CE992B0B7DC5004CB1D7 /* CheckTavolo.swift */,
 			);
 			path = Ratatuille23Tests;
 			sourceTree = "<group>";
@@ -394,8 +400,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F46CE982B0B7192004CB1D7 /* CheckUsernamePassword.swift in Sources */,
 				7F5287932AF8F5BC0044A02A /* CheckNomeIndirizzo.swift in Sources */,
 				7F3F565C2ABEF297001D0832 /* Ratatuille23Tests.swift in Sources */,
+				7F46CE9A2B0B7DC5004CB1D7 /* CheckTavolo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

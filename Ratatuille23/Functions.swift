@@ -18,13 +18,14 @@ extension String {
 class serverAPI: ObservableObject{
     
     
-    enum TelefonoError: Error {
+    enum MyError: Error {
         case emptyField
+        case tableEmpty
     }
 
     func checkTelefono(telefono: String, empty: Bool) throws -> Bool {
         if (empty) {
-            throw TelefonoError.emptyField
+            throw MyError.emptyField
         } else {
             if (telefono.isNumeric && telefono.count == 10) {
                 print("Telephone field is correct")
@@ -38,6 +39,19 @@ class serverAPI: ObservableObject{
     }
 
 
+    func checkTavolo(tavolo: Int, id_cameriere: Int) throws ->Bool{
+        
+        if(tavolo == 0){
+            throw MyError.tableEmpty
+        }else{
+            if(tavolo>0 && id_cameriere>0){
+                return true;
+            }else{
+                return false;
+            }
+
+        }
+    }
     
     
     func checkNomeIndirizo(nome: String, indirizzo: String) -> Bool{
@@ -104,6 +118,7 @@ class serverAPI: ObservableObject{
 
         task.resume()
     }
+
     
     
     static func updateEmployee(employee: Employee){
@@ -164,6 +179,7 @@ class serverAPI: ObservableObject{
             return []
         }
 
+        print(fetchedData)
         return fetchedData
     }
     

@@ -88,7 +88,9 @@ struct WaiterMenuView: View {
         }
         .alert("Inserisci tavolo", isPresented: $showAlertTable) {
             TextField("Inserisci il tavolo", text: $tavolo)
-            Button("Invia", role: .cancel) { /*aggiungi ordine al db*/}
+            Button("Invia", role: .cancel) {
+                /*aggiungi ordine al db*/
+            }
         }
     }
 }
