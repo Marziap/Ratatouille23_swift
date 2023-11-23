@@ -69,5 +69,15 @@ final class CheckUsernamePassword: XCTestCase {
         XCTAssertEqual(risultato, employee)
     }
 
-
+    func testUsernameNotExistsPalsswordNotExists() async throws {
+        let username = "kfjhtbgsefkj"
+        let password = "djvlhrfkabwdkgv"
+        let employee: [Employee] = []
+        
+        // Act
+        let risultato = try await serverAPI.getUserPass( username: username, password: password)
+        
+        // Assert
+        XCTAssertEqual(risultato, employee)
+    }
 }
