@@ -169,26 +169,10 @@
 			isa = PBXGroup;
 			children = (
 				7F42B1AB2AD4776200D46835 /* Preview Content */,
-				7F42B1A92AD4776200D46835 /* WaiterMenuView.swift */,
-				7F42B1A52AD476B100D46835 /* AddMenuItemView.swift */,
+				7F98D5342B2B9E6B00FF7DF1 /* View */,
 				7F3F56492ABEF296001D0832 /* Ratatuille23App.swift */,
-				7F3F564B2ABEF296001D0832 /* ContentView.swift */,
-				7F42B1A82AD4776200D46835 /* DipeLoginView.swift */,
-				7F42B1A72AD4776200D46835 /* DipeFirstAccessView.swift */,
-				7F42B1AA2AD4776200D46835 /* DipeTabBarLayout.swift */,
-				7F3F56762ABEF8DD001D0832 /* AmmiLoginView.swift */,
-				7F3F56782ABEF9B0001D0832 /* Components.swift */,
-				7F077ED92AC2F065007BA4B3 /* QRCodeView.swift */,
-				7F3F567A2ABF02DA001D0832 /* TabBarLayout.swift */,
-				7F86ACC12AC0735C00E45F70 /* AmmistatisticsView.swift */,
-				7FF87E952ABF2CEE00904609 /* AmmiDetailsView.swift */,
-				7F2EE7D82AD5C9B4003A5564 /* OpenFoodFactsView.swift */,
-				7FF87E8F2ABF1B8600904609 /* Functions.swift */,
-				7FF87E912ABF1F8F00904609 /* Data.swift */,
-				7F56C7D62B2B3C0D00367085 /* ChartsView.swift */,
-				7FF87E972ABF3BFE00904609 /* AmmiAddDipeView.swift */,
-				7FF87E992ABF425E00904609 /* AmmiMenuView.swift */,
-				7FF87E932ABF200400904609 /* Models.swift */,
+				7F98D5362B2B9E8C00FF7DF1 /* ViewModel */,
+				7F98D5352B2B9E7800FF7DF1 /* Model */,
 				7F3F564D2ABEF297001D0832 /* Assets.xcassets */,
 				7F3F564F2ABEF297001D0832 /* Ratatuille23.entitlements */,
 				7F3F56502ABEF297001D0832 /* Preview Content */,
@@ -222,6 +206,46 @@
 				7F3F56672ABEF297001D0832 /* Ratatuille23UITestsLaunchTests.swift */,
 			);
 			path = Ratatuille23UITests;
+			sourceTree = "<group>";
+		};
+		7F98D5342B2B9E6B00FF7DF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F42B1A92AD4776200D46835 /* WaiterMenuView.swift */,
+				7F42B1A52AD476B100D46835 /* AddMenuItemView.swift */,
+				7F3F564B2ABEF296001D0832 /* ContentView.swift */,
+				7F42B1A82AD4776200D46835 /* DipeLoginView.swift */,
+				7F42B1A72AD4776200D46835 /* DipeFirstAccessView.swift */,
+				7F42B1AA2AD4776200D46835 /* DipeTabBarLayout.swift */,
+				7F3F56762ABEF8DD001D0832 /* AmmiLoginView.swift */,
+				7F3F56782ABEF9B0001D0832 /* Components.swift */,
+				7F077ED92AC2F065007BA4B3 /* QRCodeView.swift */,
+				7F3F567A2ABF02DA001D0832 /* TabBarLayout.swift */,
+				7F86ACC12AC0735C00E45F70 /* AmmistatisticsView.swift */,
+				7FF87E952ABF2CEE00904609 /* AmmiDetailsView.swift */,
+				7F2EE7D82AD5C9B4003A5564 /* OpenFoodFactsView.swift */,
+				7F56C7D62B2B3C0D00367085 /* ChartsView.swift */,
+				7FF87E972ABF3BFE00904609 /* AmmiAddDipeView.swift */,
+				7FF87E992ABF425E00904609 /* AmmiMenuView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F98D5352B2B9E7800FF7DF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FF87E932ABF200400904609 /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F98D5362B2B9E8C00FF7DF1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7FF87E8F2ABF1B8600904609 /* Functions.swift */,
+				7FF87E912ABF1F8F00904609 /* Data.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

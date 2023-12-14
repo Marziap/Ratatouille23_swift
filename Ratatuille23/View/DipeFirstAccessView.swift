@@ -50,9 +50,7 @@ struct DipeFirstAccessView: View {
                     datas.dipendenti[0]=employee
                     isDone=true
                     
-                } catch {
-                    print("Error: \(error)")
-                }
+                } 
             }
         } label: {
             Text("Aggiorna")

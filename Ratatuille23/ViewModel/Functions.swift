@@ -200,7 +200,7 @@ class serverAPI: ObservableObject{
         let decoder = JSONDecoder()
         var fetchedData: [OFF]
         do {
-            let str = String(decoding: data, as: UTF8.self)
+            _ = String(decoding: data, as: UTF8.self)
             
             fetchedData = try decoder.decode([OFF].self, from: data)
             
@@ -226,7 +226,7 @@ class serverAPI: ObservableObject{
         let decoder = JSONDecoder()
         var fetchedData: [MenuItem]
         do {
-            let str = String(decoding: data, as: UTF8.self)
+            _ = String(decoding: data, as: UTF8.self)
             //print("Ciao1 str: " + str)
             fetchedData = try decoder.decode([MenuItem].self, from: data)
             //print("Ciao2")
@@ -251,7 +251,7 @@ class serverAPI: ObservableObject{
         let decoder = JSONDecoder()
         var fetchedData: [Employee]
         do {
-            let str = String(decoding: data, as: UTF8.self)
+            _ = String(decoding: data, as: UTF8.self)
             //print("Ciao1 str: " + str)
             fetchedData = try decoder.decode([Employee].self, from: data)
             //print("Ciao2")
@@ -275,7 +275,7 @@ class serverAPI: ObservableObject{
         let decoder = JSONDecoder()
         var fetchedData: [Ristorante]
         do {
-            let str = String(decoding: data, as: UTF8.self)
+            _ = String(decoding: data, as: UTF8.self)
             //print("Ciao1 str: " + str)
             fetchedData = try decoder.decode([Ristorante].self, from: data)
             //print("Ciao 2")
