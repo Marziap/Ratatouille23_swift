@@ -28,6 +28,7 @@
 		7F46CE982B0B7192004CB1D7 /* CheckUsernamePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46CE972B0B7192004CB1D7 /* CheckUsernamePassword.swift */; };
 		7F46CE9A2B0B7DC5004CB1D7 /* CheckTavolo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46CE992B0B7DC5004CB1D7 /* CheckTavolo.swift */; };
 		7F5287932AF8F5BC0044A02A /* CheckNomeIndirizzo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5287922AF8F5BC0044A02A /* CheckNomeIndirizzo.swift */; };
+		7F56C7D72B2B3C0D00367085 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F56C7D62B2B3C0D00367085 /* ChartsView.swift */; };
 		7F86ACC22AC0735C00E45F70 /* AmmistatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F86ACC12AC0735C00E45F70 /* AmmistatisticsView.swift */; };
 		7F86ACC52AC0849600E45F70 /* RatatouilleCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F86ACC32AC0849600E45F70 /* RatatouilleCoreData.xcdatamodeld */; };
 		7FC1154D2B1DCAFB0049BB44 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FC1154C2B1DCAFB0049BB44 /* GoogleService-Info.plist */; };
@@ -95,6 +96,7 @@
 		7F46CE992B0B7DC5004CB1D7 /* CheckTavolo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTavolo.swift; sourceTree = "<group>"; };
 		7F5287852AF8EE580044A02A /* CheckTelefonoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckTelefonoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5287922AF8F5BC0044A02A /* CheckNomeIndirizzo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckNomeIndirizzo.swift; sourceTree = "<group>"; };
+		7F56C7D62B2B3C0D00367085 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		7F86ACC12AC0735C00E45F70 /* AmmistatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmistatisticsView.swift; sourceTree = "<group>"; };
 		7F86ACC42AC0849600E45F70 /* RatatouilleCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RatatouilleCoreData.xcdatamodel; sourceTree = "<group>"; };
 		7FC1154C2B1DCAFB0049BB44 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				7F2EE7D82AD5C9B4003A5564 /* OpenFoodFactsView.swift */,
 				7FF87E8F2ABF1B8600904609 /* Functions.swift */,
 				7FF87E912ABF1F8F00904609 /* Data.swift */,
+				7F56C7D62B2B3C0D00367085 /* ChartsView.swift */,
 				7FF87E972ABF3BFE00904609 /* AmmiAddDipeView.swift */,
 				7FF87E992ABF425E00904609 /* AmmiMenuView.swift */,
 				7FF87E932ABF200400904609 /* Models.swift */,
@@ -408,6 +411,7 @@
 				7F3F56772ABEF8DD001D0832 /* AmmiLoginView.swift in Sources */,
 				7FF87E9A2ABF425E00904609 /* AmmiMenuView.swift in Sources */,
 				7F42B1AC2AD4776200D46835 /* DipeFirstAccessView.swift in Sources */,
+				7F56C7D72B2B3C0D00367085 /* ChartsView.swift in Sources */,
 				7F077EDA2AC2F065007BA4B3 /* QRCodeView.swift in Sources */,
 				7F86ACC22AC0735C00E45F70 /* AmmistatisticsView.swift in Sources */,
 				7F2EE7D92AD5C9B4003A5564 /* OpenFoodFactsView.swift in Sources */,

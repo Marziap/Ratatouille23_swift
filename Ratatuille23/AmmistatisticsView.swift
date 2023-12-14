@@ -61,7 +61,7 @@ struct AmmistatisticsView: View {
                 
             }
         }.sheet(isPresented: $showStatistics, content: {
-            Text("Ciao")
+            ChartsView(nome: datas.menuItems[selectedItem].nome ?? "cotoletta")
         })
     }
 }
