@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import FirebaseAnalytics
+import FirebaseCore
 
 struct AmmiMenuView: View {
 @State private var selected = "antipasti"
@@ -13,6 +15,7 @@ struct AmmiMenuView: View {
 @State private var showAdd = false
 @State var menuItems: [MenuItem] = []
 @State var menuItemsFiltered: [MenuItem] = []
+    
     var body: some View {
         VStack {
             HStack{
@@ -24,6 +27,9 @@ struct AmmiMenuView: View {
                             }
                             .onChange(of: selected, perform: { value in
                                 menuItemsFiltered=menuItems.filter({$0.categoria==selected})
+                                Analytics.logEvent("selected_item_changed", parameters: [
+                                                               "selected_item": selected
+                                                           ])
                             })
                             //piatti
                         }

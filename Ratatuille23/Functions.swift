@@ -7,6 +7,10 @@
 
 import Foundation
 import SwiftUI
+import FirebaseCore
+
+
+
 
 extension String {
     var isNumeric: Bool {
